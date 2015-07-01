@@ -33,6 +33,7 @@ if(isset($_POST['register'])){
             $ins4 = mysql_query("INSERT INTO `weapon` (`sword`,`shield`,`tome`) VALUES (0,0,0)") or die(mysql_error());
             $ins5 = mysql_query("INSERT INTO `ranking` (`attack`,`defense`,`overall`) VALUES(0,0,0)") or die(mysql_error());
 			$ins6 = mysql_query("INSERT INTO `building` (`tower`,`siege`,`wizguild`,`granary`,`taxhouse`) VALUES(0,0,0,0,0)") or die(mysql_error());
+			$ins7 = mysql_query("INSERT INTO `dev` (`devlevel`,`currentdev`,`aligndev`) VALUES(1,0,)") or die(mysql_error());
             echo "You have registered!";
         }
     }
